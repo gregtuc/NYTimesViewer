@@ -1,0 +1,25 @@
+{
+  "name": "NYTimes Reader",
+  "version": "1.0",
+  "description": "Read through articles without the distractions!",
+  "manifest_version": 2,
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "news16.png",
+      "24": "news24.png",
+      "32": "news32.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "js": ["jquery.min.js", "popup.js"],
+      "matches": ["http://*.nytimes.com/*"]
+    }
+  ],
+  "background": {
+    "scripts": ["jquery.min.js"],
+    "persistent": false
+  }
+}
