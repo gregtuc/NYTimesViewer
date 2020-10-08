@@ -14,7 +14,6 @@ function requestPage() {
   );
 }
 
-//var arr = [];for (var i = result.length; i--; arr.unshift(result[i]));
 function filterPage(result) {
   // result has the return value from `code`
   if (result) {
