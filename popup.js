@@ -46,7 +46,6 @@ function filterPage(result) {
         );
       }
       //Filter videos.
-      //Filter duplicate images.
       if (articlePieces[i].indexOf("<video" !== -1)) {
         articlePieces[i] = articlePieces[i].replace(
           /((<video)(.*?)>)/g,
